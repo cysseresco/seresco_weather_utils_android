@@ -1,0 +1,5 @@
+package seresco.weather.library.utils
+
+interface Constant {
+    val API_KEY: String get() = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWVnaXRzZW5AZ21haWwuY29tIiwianRpIjoiMmFiZGQ0NGUtYjgyMi00MDY1LWE2NDItYzY3NmEwMWVmOGE4IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2NjA5ODQ5OTAsInVzZXJJZCI6IjJhYmRkNDRlLWI4MjItNDA2NS1hNjQyLWM2NzZhMDFlZjhhOCIsInJvbGUiOiIifQ.fMHq_0qUNMC8MrNJz0IGbTU-8o0ZP-90iDdUBpQkNPM"
+}
