@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         googleMap.setOnMapClickListener {
             googleMap.clear()
-            meteorologyUtils.openMeteorologySheet(this, MeteorologyType.HUMIDITY, it.latitude, it.longitude, supportFragmentManager)
+            meteorologyUtils.openMeteorologySheet(this, MeteorologyType.WEATHER_TOMORROW, it.latitude, it.longitude, supportFragmentManager)
         }
     }
 
