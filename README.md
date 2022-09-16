@@ -23,3 +23,14 @@ fun openWeatherWeeklySheet() {
     meteorologyUtils.openMeteorologySheet(this, MeteorologyType.WEATHER_WEEKLY, latitude, longitude, supportFragmentManager)
 }
 ```
+
+Installation
+--------
+
+```groovy
+dependencies {
+    // Utilities for Maps SDK for Android (requires Google Play Services) 
+    implementation 'com.google.maps.android:android-maps-utils:2.4.0'
+    implementation 'com.github.cysseresco:seresco_weather_utils_android:1.0'
+}
+```
