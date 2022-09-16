@@ -26,7 +26,13 @@ fun openWeatherWeeklySheet() {
 
 Installation
 --------
-
+Add in the settings.gradle at the end of repositories:
+```groovy
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+```
+And add the dependencies
 ```groovy
 dependencies {
     // Utilities for Maps SDK for Android (requires Google Play Services) 
