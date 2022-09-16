@@ -29,8 +29,9 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         moveCamera()
 
         googleMap.setOnMapClickListener {
-            googleMap.clear()
-            meteorologyUtils.openMeteorologySheet(this, MeteorologyType.WEATHER_TOMORROW, it.latitude, it.longitude, supportFragmentManager)
+            meteorologyUtils.openOptionsSheet(supportFragmentManager, 33007)
+           // googleMap.clear()
+           // meteorologyUtils.openMeteorologySheet(this, MeteorologyType.WEATHER_TOMORROW, it.latitude, it.longitude, supportFragmentManager)
         }
     }
 

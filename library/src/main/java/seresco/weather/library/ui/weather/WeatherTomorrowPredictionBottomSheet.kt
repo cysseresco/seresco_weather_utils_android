@@ -171,8 +171,4 @@ class WeatherTomorrowPredictionBottomSheet(municipalityId: Int): BottomSheetDial
             return modalSimpleListSheet
         }
     }
-
-    interface WeatherPredictionCallback {
-
-    }
 }
