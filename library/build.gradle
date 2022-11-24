@@ -58,7 +58,7 @@ afterEvaluate {
 
                 groupId = 'seresco.weather.utils'
                 artifactId = 'seresco-weather-utils'
-                version = '1.0'
+                version = '0.0.1'
             }
         }
     }
