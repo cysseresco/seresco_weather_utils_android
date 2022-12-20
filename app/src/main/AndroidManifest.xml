@@ -21,6 +21,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC0HyI08iui2eiDKHwBLR6XlhZaCn9i4NI" />
+        <receiver android:name=".ReminderBroadcast"/>
     </application>
 
 </manifest>

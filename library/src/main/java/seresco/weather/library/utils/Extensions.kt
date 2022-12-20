@@ -4,41 +4,23 @@ import seresco.weather.library.R
 
 class Extensions {
     fun getWeatherIcon(weatherSkyStatus: String): Int {
-        return when (weatherSkyStatus) {
-            "Despejado" -> {
+        return when {
+            weatherSkyStatus.contains("Despejado") -> {
                 R.drawable.ic_clear
             }
-            "Poco nuboso" -> {
+            weatherSkyStatus.contains("nuboso") -> {
                 R.drawable.ic_cloud
             }
-            "Muy nuboso" -> {
+            weatherSkyStatus.contains("Nubes") -> {
                 R.drawable.ic_high_cloudy
             }
-            "Nubes altas" -> {
-                R.drawable.ic_high_cloudy
-            }
-            "Nuboso con lluvia" -> {
+            weatherSkyStatus.contains("lluvia") -> {
                 R.drawable.ic_rainy
             }
-            "Muy nuboso con lluvia" -> {
-                R.drawable.ic_rainy
+            weatherSkyStatus.contains("tormenta") -> {
+                R.drawable.storm
             }
-            "Intervalos nubosos con lluvia" -> {
-                R.drawable.ic_rainy
-            }
-            "Intervalos nubosos con lluvia escasa" -> {
-                R.drawable.ic_rainy
-            }
-            "Cubierto con lluvia" -> {
-                R.drawable.ic_rainy
-            }
-            "Nuboso con lluvia escasa" -> {
-                R.drawable.ic_rainy
-            }
-            "Muy nuboso con lluvia escasa" -> {
-                R.drawable.ic_rainy
-            }
-            else -> R.drawable.ic_empty
+            else -> R.drawable.ic_rainy
         }
     }
 }
